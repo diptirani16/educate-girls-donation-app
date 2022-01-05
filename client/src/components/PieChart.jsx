@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { CanvasJSChart } from "canvasjs-react-charts";
 
 export default function PieChart() {
@@ -16,8 +16,8 @@ export default function PieChart() {
             toolTipContent: "<b>{label}</b>: {y}%",
             showInLegend: "true",
             legendText: "{label}",
-            // indexLabelFontSize: 16,
-            indexLabel: "{label} - {y}%",
+            indexLabelFontSize: 10,
+            indexLabel: "{label}",
             dataPoints: [
                 { y: 87, label: "Program costs", color: "#17A2B5" },
                 { y: 10, label: "Operational costs", color: "#FF0000" },
