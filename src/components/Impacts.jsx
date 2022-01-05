@@ -1,7 +1,7 @@
 import { Typography, Grid, Paper } from "@mui/material";
 import React from "react";
 
-import undraw_education from "../assets/undraw_education.svg";
+import education from "../assets/education.svg";
 
 export default function Impacts() {
     const impactsList = [
@@ -16,17 +16,17 @@ export default function Impacts() {
 
     return (
         <>
-            <Typography sx={{ mt: 2, fontSize: 40, fontWeight: 800, color: "#FF0000", textAlign: "center" }}>Educating a Girl can have Multifold Impact!</Typography>
-            <Grid container sx={{ mt: 2 }}>
+            <Typography sx={{ mt: 8, fontSize: 40, fontWeight: 800, color: "#263238", textAlign: "center" }}>Educating a Girl can have Multifold Impact!</Typography>
+            <Grid container justifyContent={"space-around"} sx={{ mt: 2 }}>
                 <Grid item lg="5" md="5" xs="12">
                     {impactsList.map((item, i) => (
-                        <Paper sx={{ backgroundColor: '#FF0000', mt: 2 }}>
+                        <Paper sx={{ backgroundColor: '#263238', mt: 2 }}>
                             <Typography sx={{ fontSize: 16, p: 1.5, color: "white" }} key={i}>{item}</Typography>
                         </Paper>
                     ))}
                 </Grid>
                 <Grid item lg="5" md="5" xs="12">
-                    <img src={undraw_education} width="500vw" style={{margin: "3em" }}/>
+                    <img src={education} width="400vw" style={{margin: "3em" }}/>
                 </Grid>
             </Grid>
         </>
