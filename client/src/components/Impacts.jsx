@@ -26,7 +26,7 @@ export default function Impacts() {
                     ))}
                 </Grid>
                 <Grid item lg="5" md="5" xs="12">
-                    <img src={education} width="80%" style={{margin: "2em" }}/>
+                    <img src={education} alt="education" width="80%" style={{margin: "2em" }}/>
                 </Grid>
             </Grid>
         </>
